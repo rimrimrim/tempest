@@ -5,7 +5,7 @@
       <tr>
         <p>
           <%= image_tag(title.picture_url, class: "img-rounded img-responsive") if title.picture.present? %>
-          <%= title.memo %>
+          <%= link_to "元のtweet", title.memo, :target => "_blank" %>
         </p>
       </tr>
     <% end %>

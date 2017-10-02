@@ -6,9 +6,6 @@ class TitlesController < ApplicationController
   def index
     @titles = Title.all
     require 'open-uri'
-    respond_to do |format|
-      format.html # show.html.erb
-    end
   end
 
   # GET /titles/1
@@ -73,6 +70,6 @@ class TitlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def title_params
-      params.require(:title).permit(:memo, :author, :picture, :id)
+      params.require(:title).permit(:memo, :author, :picture, :id, :tag, :tag2, :data)
     end
 end

@@ -5,6 +5,10 @@ class TitlesController < ApplicationController
   # GET /titles.json
   def index
     @titles = Title.all
+    require 'open-uri'
+    respond_to do |format|
+      format.html # show.html.erb
+    end
   end
 
   # GET /titles/1

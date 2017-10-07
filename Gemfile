@@ -61,3 +61,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'twitter'
 gem 'ruby-oembed'
+
+gem 'haml', '~> 5.0', '>= 5.0.3'
+gem 'google-analytics-rails'
+gem 'google-api-client'

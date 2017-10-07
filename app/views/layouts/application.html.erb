@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Tempest</title>
+    <%= analytics_init if Rails.env.production? %>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all',
                                'data-turbolinks-track': 'reload' %>
@@ -35,7 +36,7 @@
                          ga('create', 'UA-XXXXXXXX-Y', 'YOUR_DOMAIN');
                          ga('send', 'pageview');
                        </script>
-    
+
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
@@ -44,11 +45,10 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "Tempest", '#', id: "logo" %>
+        <%= link_to "Tempest", 'root', id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Help",   '#' %></li>
+            <li><%= link_to "Help", '#' %></li>
           </ul>
         </nav>
       </div>

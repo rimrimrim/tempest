@@ -1,15 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-  <tbody>
+<section class="container">
+<div class="row">
+  <div class="col-md-12">
     <% @titles.each do |title| %>
-      <tr>
-        <p>
           <%= image_tag(title.picture_url, class: "img-rounded img-responsive") if title.picture.present? %>
           <% hoge = title.author %>
-          <%= hoge.html_safe %>
-        </p>
-      </tr>
+                <%= hoge.html_safe %>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
+</div>
 <br>

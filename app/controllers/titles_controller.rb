@@ -1,10 +1,10 @@
 class TitlesController < ApplicationController
   before_action :set_title, only: [:show, :edit, :update, :destroy]
-
+  PER = 16
   # GET /titles
   # GET /titles.json
   def index
-    @titles = Title.all
+    @titles = Title.page(params[:page]).per(PER)
     require 'open-uri'
   end
 

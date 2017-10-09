@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<section class="container">
+<section class="container-fluid">
 <div class="row">
-  <div class=class="col-xs-12 visible-xs">
     <% @titles.each do |title| %>
-          <%= image_tag(title.picture_url, class: "img-rounded img-responsive") if title.picture.present? %>
-          <% hoge = title.author %>
-                <%= hoge.html_safe %>
-    <% end %>
+    <div class = "col-xs-12 col-sm-12 col-md-4">
+          <%= title.author.html_safe %>
   </div>
+  <% end %>
+
 </div>
-</div>
-<br>
+</section>

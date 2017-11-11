@@ -16,7 +16,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <h1  id="sample01">your trip more enjoyable</h1>
+        <h1 id="sample01">your trip more enjoyable</h1>
         <a class="button" href="#">Buy now</a>
       </div>
     </div>
@@ -31,18 +31,55 @@
 </section>
 
 <section class="section2">
-pictures
+<h2 class="picure">Pictures</h2>
+<p id="pclass">2人だけ残せない思い出もバッチリ写真に残せます。</p>
+<div class="wrapper">
+  <div class="box">
+    <%= image_tag('079c7965778cd1e1698662f29f85bf89_s.jpg', :class => "image_class")%>
+  </div>
+  <div class="box">
+    <%= image_tag('89c6ce2747505c721d5af7ecd258d8a4_s.jpg', :class => "image_class") %>
+  </div>
+  <div class="box">
+    <%= image_tag('top', :class => "image_class") %>
+  </div>
+  <div class="box">
+    <%= image_tag('1510510a68da621e7df4b48aa7e1e992_s.jpg', :class => "image_class") %>
+  </div>
+</div>
 </section>
 
 <section class="section3">
-plan
+<h2 class="price">price</h2>
+<p>良質なサービスを手頃な価格で提供します。</p>
+    <div class="wrapper2">
+      <div class="praice_box">
+        <div class="plans">
+          1
+        </div>
+        <h3>1 hour </br> 3,500 Yen</h3>
+      </div>
+      <div class="praice_box">
+        <div class="plans">
+          3
+        </div>
+        <h3>3 hour </br> 6,000Yen</h3>
+      </div>
+      <div class="praice_box">
+        <div class="plans">
+          6
+        </div>
+        <h3>6 hour </br> 10,000Yen</h3>
+      </div>
+    </div>
 </section>
 
 <section class="paypal">
+  <h2>Buy now</h2>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
-<table>
-<tr><td><input type="hidden" name="on0" value="Plan">Plan</td></tr><tr><td><select name="os0">
+<table align="center">
+<tr><td align="center"><input type="hidden" name="on0" value="Plan"></td></tr><tr><td><select name="os0">
 	<option value="1 hour plan">1 hour plan ¥3,500 JPY</option>
 	<option value="3 hour plan">3 hour plan ¥6,000 JPY</option>
 	<option value="6 hour plan">6 hour plan ¥10,000 JPY</option>

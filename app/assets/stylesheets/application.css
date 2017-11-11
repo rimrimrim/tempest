@@ -13,104 +13,89 @@
  *= require_tree .
  *= require_self
  */
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "toastr";
 
- body {
- 	background: #E9E9E9;
+body{
+  color: #222;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+ .jumbotron {
+  padding-top: 0px;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) ), url(top.jpg);
+ 	background-size: cover;
+ 	background-position: 50% 50%;
+ 	height: 420px;
  }
 
- h1, h2, h3, h4, h5, h6 {
- 	font-weight: 100;
- 	color: #529ECC;
- 	font-weight: bold;
- 	text-align: center;
+.row{
+  color: block;
+}
+
+ .navbar-default {
+     background: transparent;
+     border-color: transparent;
+     z-index: 10;
  }
 
-
-
- nav {
- 	box-shadow: 0 1px 2px 0 rgba(82,158,204, 0.22);
- 
+ .navbar-default .navbar-nav > li > a {
+     color: white;
+     font-size: 13px;
  }
 
- #pics {
-   margin: 0 auto;
-   width: 100%;
-   .box {
- 	  margin: 7px;
- 	  width: 350px;
- 	  box-shadow: 0 1px 2px 0 rgba(82,158,204, 0.48);
- 	  border-radius: 2px;
- 	  text-align: center;
- 	  img {
- 	  	max-width: 100%;
- 	  	height: auto;
- 	  }
- 	  h2 {
- 	  	font-size: 10px;
- 	  	margin: 0;
- 	  	font-weight: bold;
- 	  	padding: 25px 10px;
-
- 	  	a {
- 				color: #529ECC;
-
- 	  	}
- 	  }
- 	}
+ .navbar-default .navbar-brand {
+     color: #000;
+     font-size: 40px;
+     font-family: "cursive", Times, serif;
  }
 
- #edit_page {
- 	.current_image {
- 		img {
- 			display: block;
- 			margin: 20px 0;
- 		}
- 	}
+ .navbar-default .navbar-toggle .icon-bar {
+     background-color: #fff;
  }
 
- #pic_show {
- 	.panel-heading {
- 		padding: 0;
- 	}
- 	.title_author {
- 		img {
- 			max-width: 100%;
- 			width: 100%;
- 			display: block;
- 			margin: 0 auto;
- 		}
- 	}
- 	.panel-body {
- 		padding: 35px;
- 		h1 {
- 			margin: 0 0 10px 0;
- 			color: #529ECC;
- 			font-weight: bold;
- 		}
- 		.description {
- 			color: #253567;
- 			font-weight: bold;
- 			line-height: 1.75;
- 			margin: 0;
- 			text-align: center;
- 		}
- 	}
- 	.panel-footer {
- 		padding: 20px 25px;
- 		p {
- 			margin: 0;
- 		}
- 		.user {
- 			padding-top: 2px;
- 			font-weight: bold;
- 			text-align: center;
+.navbar-log{
+  font-color: block;
+}
 
- 		}
- 	}
- }
+.row{
+  font-color: white;
+  font-size: 80px;
+}
 
- textarea {
- 	min-height: 250px;
- }
+#sample01{
+  border-left: 10px solid #cc3366;
+  border-right: 10px solid #cc3366;
+  font-family: "cursive", Times, serif;
+  color: #fff;
+  margin-top: 70px;
+}
+
+.button{
+  display: inline-block;
+  width: 180px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #cc3366;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.section1{
+  padding: 80px 30px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.about{
+  margin: 30px 0 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}

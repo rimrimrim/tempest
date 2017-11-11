@@ -1,14 +1,68 @@
-<h1>Twitterで流行っていること</h1>
-<p id="notice"><%= notice %></p>
+<div class="jumbotron">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-<section class="container-fluid">
-<div class="row">
-    <% @titles.each do |title| %>
-    <div class = "col-xs-12 col-sm-12 col-md-4">
-          <%= title.author.html_safe %>
+      </div><!-- /.navbar-collapse -->
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h1  id="sample01">your trip more enjoyable</h1>
+        <a class="button" href="#">Buy now</a>
+      </div>
+    </div>
   </div>
-  <% end %>
-
 </div>
+
+
+<section class="section1">
+<h2 class="about">About Service</h2>
+<p>このサービスはあなたの旅行を最高の思い出にするために、私があなたたちの写真を時間の限り撮り続けます。</p>
+
 </section>
-<%= paginate @titles %>
+
+<section class="section2">
+pictures
+</section>
+
+<section class="section3">
+plan
+</section>
+
+<section class="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Plan">Plan</td></tr><tr><td><select name="os0">
+	<option value="1 hour plan">1 hour plan ¥3,500 JPY</option>
+	<option value="3 hour plan">3 hour plan ¥6,000 JPY</option>
+	<option value="6 hour plan">6 hour plan ¥10,000 JPY</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="JPY">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+</form>
+</section>
+
+<!-- PayPal Logo -->
+<table border="0" cellpadding="10" cellspacing="0" align="center">
+<tr>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><a href="#" onclick="javascript:window.open('https://www.paypal.jp/jp/contents/popup/logo/AM_190_65/','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=900, height=700');"><img src="https://www.paypal.jp/uploadedImages/wwwpaypaljp/Supporting_Content/jp/contents/popup/logo/AM_190_65.png" border="0" alt="その他のオプション"></a></td>
+</tr>
+</table>
+<!-- PayPal Logo -->

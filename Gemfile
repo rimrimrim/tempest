@@ -67,3 +67,5 @@ gem 'google-analytics-rails'
 gem 'google-api-client'
 gem 'kaminari', '~> 0.17.0'
 gem 'kaminari-bootstrap', '~> 3.0.1'
+
+gem 'devise'

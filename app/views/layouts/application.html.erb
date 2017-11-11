@@ -6,7 +6,7 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all',
                                'data-turbolinks-track': 'reload' %>
-  
+
 
 
     <!--[if lt IE 9]>
@@ -20,13 +20,22 @@
         <%= link_to "Your Photographer", 'root', id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Help", '#' %></li>
-          </ul>
+            <% if (!user_signed_in?) %>
+              <li><a href="#">先生になる</a></li>
+              <li><a href="#">利用の流れ</a></li>
+              <li><%= link_to "ログイン", new_user_session_path %></li>
+              <li><%= link_to "アカウントの作成", new_user_registration_path %></li>
+            <% else %>
+              <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+            <% end %>
+        </ul>
         </nav>
       </div>
     </header>
     <div class="container">
       <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     </div>
   </body>
 </html>

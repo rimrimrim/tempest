@@ -29,8 +29,9 @@
             <% if current_user.provider %>
               <%= image_tag current_user.image, class:"img-circle" %>
               <% else %>
-              <%= current_user.email%>
+              <%= current_user.email %>
             <% end %>
+              <li><%= link_to "プロフィールページ", user_path(current_user) %></li>
               <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
             <% end %>
         </ul>

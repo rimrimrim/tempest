@@ -175,3 +175,11 @@ body{
   color: #ffffff;
   background-color: #4c66a4;
 }
+
+.panel-heading{
+  font-size: 12px;
+}
+
+.panel-body{
+  font-size: 12px;
+}

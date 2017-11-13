@@ -11,11 +11,13 @@
         </div>
         <div class="panel-body">
           <div class="ver-email">
-            メールアドレス
+            メールアドレス</br>
+            <%= @user.email %>
           </div>
           <br>
           <div class="ver-tel">
-            電話番号
+            電話番号</br>
+            <%= @user.phone_number %>
           </div>
           <br>
           <div class="ver-facebook">
@@ -27,6 +29,8 @@
 
     <div class="col-lg-9 col-md-8 col-sm-12">
       <h3>こんにちは</h3>
+      <p>自己紹介</p>
+      <p><%= @user.description %></p>
     </div>
 
   </div>

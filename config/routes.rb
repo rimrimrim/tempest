@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'listings/index'
+
+  get 'listings/new'
+
+  get 'listings/show'
+
+  get 'listings/create'
+
+  get 'listings/edit'
+
+  get 'listings/update'
+
   get 'static_pages/home'
   get 'static_pages/help'
 

@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171113133614) do
+ActiveRecord::Schema.define(version: 20171117002314) do
+
+  create_table "listings", force: :cascade do |t|
+    t.string "camera_type"
+    t.string "url"
+    t.string "using_time"
+    t.string "language"
+    t.string "adress"
+    t.string "listing_title"
+    t.text "listing_contents"
+    t.integer "price"
+    t.boolean "active"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_listings_on_user_id"
+  end
 
   create_table "titles", force: :cascade do |t|
     t.text "memo"

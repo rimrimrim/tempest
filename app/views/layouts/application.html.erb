@@ -21,7 +21,6 @@
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <% if (!user_signed_in?) %>
-              <li><a href="#">先生になる</a></li>
               <li><a href="#">利用の流れ</a></li>
               <li><%= link_to "ログイン", new_user_session_path %></li>
               <li><%= link_to "アカウントの作成", new_user_registration_path %></li>
@@ -31,6 +30,7 @@
               <% else %>
               <%= current_user.email %>
             <% end %>
+　            <li><%= link_to "カメラマンになる", listings_new_path %></li>
               <li><%= link_to "プロフィールページ", user_path(current_user) %></li>
               <li><%= link_to "プロフィール編集", edit_user_registration_path %></li>
               <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>

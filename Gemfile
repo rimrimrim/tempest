@@ -70,3 +70,5 @@ gem 'kaminari-bootstrap', '~> 3.0.1'
 
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'toastr-rails'
+gem "paperclip", "~> 5.0.0"

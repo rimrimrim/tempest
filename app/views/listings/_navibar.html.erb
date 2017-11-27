@@ -1,0 +1,32 @@
+<div class="sidebar-nav">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+        <label style="color: #fff;">他の項目を編集する</label>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active" if contoller?("listings") && action?("basics") %>
+          <%= link_to "基本事項", manage_listing_basics_path(@listing) %>
+        </li>
+        <li class="active" if contoller?("listings") && action?("basics") %>
+          <%= link_to "募集の内容", manage_listing_description_path(@listing) %>
+        </li>
+        <li class="active" if contoller?("listings") && action?("basics") %>
+          <%= link_to "住所情報", manage_listing_address_path(@listing) %>
+        </li>
+        <li class="active" if contoller?("listings") && action?("basics") %>
+          <%= link_to "料金", manage_listing_price_path(@listing) %>
+        </li>
+        <li class="active" if contoller?("listings") && action?("basics") %>
+          <%= link_to "写真情報", manage_listing_photos_path(@listing) %>
+        </li>
+        <li class="active" if contoller?("listings") && action?("basics") %>
+        <li><%= link_to "カレンダー", manage_listing_calendar_path(@listing) %></li>
+        <li><%= link_to "口座情報", manage_listing_acount_path(@listing) %></li>
+        <li><%= link_to "公開", manage_listing_publish_path(@listing) %></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

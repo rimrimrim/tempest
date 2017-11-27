@@ -6,13 +6,13 @@ class ListingsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
-    get listings_new_url
+  test "should get show" do
+    get listings_show_url
     assert_response :success
   end
 
-  test "should get show" do
-    get listings_show_url
+  test "should get new" do
+    get listings_new_url
     assert_response :success
   end
 

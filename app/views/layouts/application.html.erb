@@ -6,9 +6,6 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all',
                                'data-turbolinks-track': 'reload' %>
-
-
-
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
@@ -25,12 +22,12 @@
               <li><%= link_to "ログイン", new_user_session_path %></li>
               <li><%= link_to "アカウントの作成", new_user_registration_path %></li>
             <% else %>
-            <% if current_user.provider %>
-              <%= image_tag current_user.image, class:"img-circle" %>
-              <% else %>
-              <%= current_user.email %>
-            <% end %>
-　            <li><%= link_to "カメラマンになる", listings_new_path %></li>
+                  <% if current_user.provider %>
+                    <%= image_tag current_user.image, class:"img-circle" %>
+                    <% else %>
+                    <%= current_user.email %>
+                  <% end %>
+    　        <li><%= link_to "カメラマンになる", new_listing_path %></li>
               <li><%= link_to "プロフィールページ", user_path(current_user) %></li>
               <li><%= link_to "プロフィール編集", edit_user_registration_path %></li>
               <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>

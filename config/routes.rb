@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   resources :titles
   resources :listings
   resources :users
+  resources :photos, only: [:create, :destroy]
   root to: "home#index"
 
   get 'manage-listing/:id/basics' => 'listings#basics', as: 'manage_listing_basics'

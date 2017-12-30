@@ -49,6 +49,7 @@ class ListingsController < ApplicationController
 
   def photos
     @listing = Listing.find(params[:id])
+    @photo = Photo.new
   end
 
   def calendar

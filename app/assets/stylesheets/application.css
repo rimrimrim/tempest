@@ -12,11 +12,13 @@
  *
  *= require_tree .
  *= require_self
+ *= require dropzone/dropzone
  */
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "toastr";
+ @import "dropzone/dropzone";
 
 body{
   color: #222;

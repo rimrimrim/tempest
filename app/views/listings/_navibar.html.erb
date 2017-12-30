@@ -20,7 +20,7 @@
           <%= link_to "料金", manage_listing_price_path(@listing) %>
         </li>
         <li class="active" if contoller?("listings") && action?("basics") %>
-          <%= link_to "写真情報", manage_listing_photos_path(@listing) %>
+          <%= link_to "写真情報", manage_listing_photos_path(@listing), data: { turbolinks: false }  %>
         </li>
         <li class="active" if contoller?("listings") && action?("basics") %>
         <li><%= link_to "カレンダー", manage_listing_calendar_path(@listing) %></li>

@@ -19,7 +19,9 @@
  @import "bootstrap";
  @import "toastr";
  @import "dropzone/dropzone";
-
+ @import "jquery-ui/datepicker";
+ @import "jquery-bootstrap-datepicker.scss";
+ 
 body{
   color: #222;
   background-color: #f8f8f8;

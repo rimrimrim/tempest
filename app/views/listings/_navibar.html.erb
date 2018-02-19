@@ -24,6 +24,7 @@
         </li>
         <li class="active" if contoller?("listings") && action?("basics") %>
         <li><%= link_to "カレンダー", manage_listing_calendar_path(@listing) %></li>
+        <li><%= link_to "リスティング", listings_path(@listing) %></li>
         <li><%= link_to "口座情報", manage_listing_acount_path(@listing) %></li>
         <li><%= link_to "公開", manage_listing_publish_path(@listing) %></li>
       </ul>

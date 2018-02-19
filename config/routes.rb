@@ -1,20 +1,17 @@
 Rails.application.routes.draw do
 
   get 'listings/index'
-
   get 'listings/show'
-
   get 'listings/new'
-
   get 'listings/create'
-
   get 'listings/edit'
-
   get 'listings/update'
-
   get 'static_pages/home'
   get 'static_pages/help'
 
+  resources :listings do
+    resources :reservations, only:[:create]
+  end
   root 'titles#index'
   devise_scope :user do
      get '/users/sign_out' => 'devise/sessions#destroy'

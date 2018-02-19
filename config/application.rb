@@ -16,6 +16,3 @@ module TempestProduct
     # -- all .rb files in that directory are automatically loaded.
   end
 end
-
-facebook_app_id: "1010115312453981"
-facebook_app_secret: "07e0774128a39ed317091d9bffca89d0"

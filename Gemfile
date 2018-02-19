@@ -74,6 +74,8 @@ gem 'toastr-rails'
 gem "paperclip", "~> 5.0.0"
 gem 'dropzonejs-rails'
 gem 'figaro', "~> 1.1.0"
+gem 'geocoder'
+gem 'jquery-ui-rails'
 
 group :production do
   gem 'pg'

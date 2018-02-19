@@ -96,6 +96,7 @@ GEM
     ffi (1.9.18)
     figaro (1.1.1)
       thor (~> 0.14)
+    geocoder (1.4.5)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     google-analytics-rails (1.1.1)
@@ -132,6 +133,8 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    jquery-ui-rails (6.0.1)
+      railties (>= 3.2.16)
     jwt (1.5.6)
     kaminari (0.17.0)
       actionpack (>= 3.0.0)
@@ -327,10 +330,12 @@ DEPENDENCIES
   devise
   dropzonejs-rails
   figaro (~> 1.1.0)
+  geocoder
   google-analytics-rails
   google-api-client
   haml (~> 5.0, >= 5.0.3)
   jbuilder (~> 2.5)
+  jquery-ui-rails
   kaminari (~> 0.17.0)
   kaminari-bootstrap (~> 3.0.1)
   listen (>= 3.0.5, < 3.2)
@@ -355,4 +360,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.1

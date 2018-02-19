@@ -43,7 +43,7 @@ class ListingsController < ApplicationController
     @listing = Listing.find(params[:id])
   end
 
-  def addres
+  def address
     @listing = Listing.find(params[:id])
   end
 
@@ -70,7 +70,7 @@ class ListingsController < ApplicationController
 
   private
   def listing_params
-    params.require(:listing).permit(:home_type, :pet_type, :breeding_years, :pet_size, :price, :address, :address, :listing_title, :listing_content, :active)
+    params.require(:listing).permit(:home_type, :pet_type, :breeding_years, :pet_size, :price_pernight, :price, :address, :address, :listing_title, :listing_content, :active)
   end
 
   def set_listing

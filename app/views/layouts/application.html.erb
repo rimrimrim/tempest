@@ -14,22 +14,21 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "Your Photographer", 'root', id: "logo" %>
+        <%= link_to "Your Photographer", '/', id: "logo" %>
         <nav>
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav-navbar-nav-navbar-right">
             <% if (!user_signed_in?) %>
-              <li><a href="#">利用の流れ</a></li>
-              <li><%= link_to "ログイン", new_user_session_path %></li>
-              <li><%= link_to "アカウントの作成", new_user_registration_path %></li>
+              <li><%= link_to "login", new_user_session_path %></li>
+              <li><%= link_to "make_acount", new_user_registration_path %></li>
             <% else %>
                   <% if current_user.provider %>
                     <%= image_tag current_user.image, class:"img-circle" %>
                     <% else %>
                     <%= current_user.email %>
                   <% end %>
-    　        <li><%= link_to "カメラマンになる", new_listing_path %></li>
-              <li><%= link_to "プロフィールページ", user_path(current_user) %></li>
-              <li><%= link_to "プロフィール編集", edit_user_registration_path %></li>
+    　        <li><%= link_to "make", new_listing_path %></li>
+              <li><%= link_to "profile", user_path(current_user) %></li>
+              <li><%= link_to "編集ページ", edit_user_registration_path %></li>
               <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
             <% end %>
         </ul>
